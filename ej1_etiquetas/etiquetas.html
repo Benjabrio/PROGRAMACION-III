@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas HTML5</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #004080;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            columns: 3;
+            -webkit-columns: 3;
+            -moz-columns: 3;
+            gap: 2rem;
+            padding-left: 1rem;
+        }
+        li {
+            margin-bottom: 0.4rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listado de etiquetas válidas en HTML5</h1>
+    <p>A continuación se enumeran todas las etiquetas reconocidas por HTML5 actualmente:</p>
+    <ul>
+        <li>&lt;a&gt;</li>
+        <a href="https://www.youtube.com/watch?v=bwAbeOvpfq0">Trailer de minecraft!</a>
+        <li>&lt;abbr&gt;</li>
+        <abbr title="League of Legends">LoL</abbr>
+        <li>&lt;area&gt;</li>
+        <img src="https://i0.wp.com/coplaco.com/wp-content/uploads/2019/04/MEMES.png?fit=1170%2C760&ssl=1" alt="meme" usemap="#meme-map" width="250" height="200">
+        <map name="meme-map">
+            <area shape="rect" coords="34,44,270,350" href="https://i0.wp.com/coplaco.com/wp-content/uploads/2019/04/MEMES.png?fit=1170%2C760&ssl=1" alt="meme">
+        </map>
+        <li>&lt;article&gt;</li>
+        <article>
+            <h2>Pelicula de minecraft</h2>
+            <p>Es una película de aventuras estadounidense basada en el videojuego del mismo nombre de Mojang Studios. Producida por Legendary Pictures, Mojang y Vertigo Entertainment, y distribuida por Warner Bros.</p>
+        </article>
+        <li>&lt;aside&gt;</li>
+        <aside>
+            <h2>Dato curioso</h2>
+            <p>En una escena, aparece un chancho con una corona, haciendo homenaje al YouTuber "Technoblade". 
+            </p>
+          </aside>
+        <li>&lt;audio&gt;</li>
+        <audio controls>
+            <source src="aldeano.mp3" type="audio/mpeg">
+            <source src="aldeano.ogg" type="audio/ogg">
+        </audio>
+        <li>&lt;b&gt;</li>
+        <p>Texto normal - <b> y acá está en negrita</b>.</p>
+        <li>&lt;base&gt;</li>
+        <p> Base se usa para definir una URL base, para no anotar enlaces largos entonces toman de referencia la ruta base</p>
+        <li>&lt;bdi&gt;</li>
+        <p>sirve para usar correctamente textos con distintos tipos de escritura</p>
+        <p>Usuario: <bdi>أحمد</bdi></p>
+        <p>Usuario: <bdi>Benja</bdi></p>
+        <li>&lt;bdo&gt;</li>
+        <bdo dir="rtl">Texto de derecha a izquierda</bdo>
+        <li>&lt;blockquote&gt;</li>
+        <blockquote>
+            "La clave para sobrevivir la primera noche en minecraft es construir un casita antes de que salgan los monstruos."
+          </blockquote>
+        <li>&lt;body&gt;</li>
+        <p>la etiqueta body define el cuerpo del archivo html </p>
+        <li>&lt;br&gt;</li>
+        <p>la etiqueta br agrega un salto de linea en el texto</p>
+        <li>&lt;button&gt;</li>
+        <button>Botón</button>
+        <li>&lt;canvas&gt;</li>
+        <p>canvas se utiliza para gráficos mediante scripts </p>
+        <canvas id="myCanvas" width="150" height="150" style="border:1px solid red"></canvas>
+        <li>&lt;caption&gt;</li>
+        <p>caption se utiliza para agregar un título a una tabla</p>
+        <li>&lt;cite&gt;</li>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Leonardo_da_Vinci_-_Mona_Lisa_%28Louvre%2C_Paris%29.jpg/960px-Leonardo_da_Vinci_-_Mona_Lisa_%28Louvre%2C_Paris%29.jpg" width="250" height="200" alt="mona lisa">
+        <p><cite>La Gioconda</cite> de Leonardo da Vinci </p>
+        <li>&lt;code&gt;</li>
+        <p>La etiqueta <code>a</code> sirve para agregar enlaces</p>
+        <li>&lt;col&gt;</li>
+        <p>col se utiliza para definir una columna dentro de una tabla</p>
+        <li>&lt;colgroup&gt;</li>
+        <p>colgroup se utiliza para definir un grupo de columnas dentro de una tabla</p>
+        <li>&lt;data&gt;</li>
+        <p>data se utiliza para agregar información adicional a un elemento</p>
+        <li>&lt;datalist&gt;</li>
+        <label for="juego">Elije tu mob favorito de la lista</label>
+        <input list="minecraft-mobs" id="juego" name="juego" placeholder="Elije el mob">
+        <datalist id="minecraft-mobs">
+            <option value="Zombie">
+            <option value="Creeper">
+            <option value="Enderman">
+            <option value="Esqueleto">
+            <option value="Araña">
+        </datalist>
+        <li>&lt;dd&gt;</li>
+        <p>dd se utiliza para definir una descripción dentro de una lista de definiciones</p>
+        <li>&lt;del&gt;</li>
+        <p>Mi mob favorito es el <del>Enderman</del> Creeper</p>
+        <li>&lt;details&gt;</li>
+        <details>
+            <summary>Más información</summary>
+            <p>El Enderman es un mob neutral que aparece en el juego Minecraft.</p>
+        </details>
+        <li>&lt;dfn&gt;</li>
+        <p><dfn>Minecraft</dfn> es un juego de distintas plataformas</p>
+        <li>&lt;dialog&gt;</li>
+        <p>Sirve para crear cuadros de dialogos</p>
+        <li>&lt;div&gt;</li>
+        <p>Sirve para definir divisiones o secciones en HTML</p>
+        <li>&lt;dl&gt;</li>
+        <dl>
+            <dt>Zombie</dt>
+            <dd>Un mob que aparece en la noche y ataca al jugador.</dd>
+            <dt>Creeper</dt>
+            <dd>Un mob explosivo, puede vivir de día</dd>
+        </dl>
+        <li>&lt;dt&gt;</li>
+        <p>define un nombre o termino en una lista</p>
+        <li>&lt;em&gt;</li>
+        <p>La etiqueta <em>em</em> se utiliza para enfatizar un texto</p>
+        <li>&lt;embed&gt;</li>
+        <p>embed se utiliza para incrustar contenido externo, como videos o música</p>
+        <li>&lt;fieldset&gt;</li>
+        <p>fieldset se utiliza para agrupar elementos dentro de un formulario</p>
+        <fieldset>
+            <legend>Información del usuario</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </fieldset>
+        <li>&lt;figcaption&gt;</li>
+        <p>figcaption se utiliza para agregar un pie de foto a una imagen o figura</p>
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Leonardo_da_Vinci_-_Mona_Lisa_%28Louvre%2C_Paris%29.jpg/960px-Leonardo_da_Vinci_-_Mona_Lisa_%28Louvre%2C_Paris%29.jpg" width="250" height="200" alt="mona lisa">
+            <figcaption>La Gioconda de Leonardo da Vinci</figcaption>
+        <li>&lt;figure&gt;</li>
+        <p>figure se utiliza para definir una figura o imagen dentro de un documento</p>
+        <li>&lt;footer&gt;</li>
+        <footer>
+            <p>Autor: Benjamin Briolini</p>
+            <p><a href="mailto:benjamin.briolini@gmail.com">benjamin.briolini@gmail.com</a></p>
+        </footer>
+        <li>&lt;form&gt;</li>
+        <form action="/action_page.php" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+        <li>&lt;h1&gt;</li>
+        <h1>Título</h1>
+        <li>&lt;h2&gt;</li>
+        <h2>Título</h2>
+        <li>&lt;h3&gt;</li>
+        <h3>Título</h3>
+        <li>&lt;h4&gt;</li>
+        <h4>Título</h4>
+        <li>&lt;h5&gt;</li>
+        <h5>Título</h5>
+        <li>&lt;h6&gt;</li>
+        <h6>Título</h6>
+        <li>&lt;head&gt;</li>
+        <p>La etiqueta head se utiliza para definir la cabecera de un documento HTML</p>
+        <li>&lt;header&gt;</li>
+        <header>
+            <h1>Mundo Minecraft</h1>
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="guias.html">Guías</a></li>
+                <li><a href="mods.html">Mods</a></li>
+              </ul>
+          </header>
+        <li>&lt;hr&gt;</li>
+        <p>La etiqueta hr se utiliza para crear una línea horizontal en el documento</p>
+        <hr>
+        <li>&lt;html&gt;</li>
+        <p>La etiqueta html se utiliza para definir el inicio y el final de un documento HTML</p>
+        <li>&lt;i&gt;</li>
+        <p>Minecraft es un <i>juego</i> de supervivencia</p>
+        <li>&lt;iframe&gt;</li>
+        <p>iframe se utiliza para incrustar otro documento HTML dentro de un documento HTML</p>
+        <iframe src="https://www.youtube.com/embed/bwAbeOvpfq0" width="250" height="200" frameborder="0" allowfullscreen></iframe>
+        <li>&lt;img&gt;</li>
+        <p>La etiqueta img se utiliza para insertar imágenes en un documento HTML</p>
+        <li>&lt;input&gt;</li>
+        <p>La etiqueta input se utiliza para crear campos de entrada en un formulario</p>
+        <input type="text" placeholder="Escribe algo aquí">
+        <li>&lt;ins&gt;</li>
+        <p>El mob más fuerte de minecraft es el <ins>Warden</ins></p>
+        <li>&lt;kbd&gt;</li>
+        <p>Para agarrar cosas más rapido apretar <kbd>Shift</kbd> + <kbd>Clic izquierdo</kbd></p>
+        <li>&lt;label&gt;</li>
+        <p>La etiqueta label se utiliza para definir una etiqueta para un elemento de formulario</p>
+        <label for="label">Esto es el label:</label>
+        <input type="text" id="label" name="label">
+        <li>&lt;legend&gt;</li>
+        <p>La etiqueta legend se utiliza para definir un título para un elemento fieldset</p>
+        <li>&lt;li&gt;</li>
+        <p>La etiqueta li se utiliza para definir un elemento de lista</p>
+        <ul>
+            <li>queso</li>
+            <li>jamon</li>
+            <li>harina</li>
+        </ul>
+        <li>&lt;link&gt;</li>
+        <p>se usa para vincular archivos externos al documento</p>
+        <li>&lt;main&gt;</li>
+        <p>La etiqueta Main especifica el contenido principal de un documento.</p>
+        <li>&lt;map&gt;</li>
+        <img src="https://static.wixstatic.com/media/ff9d7d_015eb7a38af74266a3e8893f2e26a3d2~mv2.png/v1/fill/w_488,h_465,al_c,lg_1,q_85,enc_avif,quality_auto/ff9d7d_015eb7a38af74266a3e8893f2e26a3d2~mv2.png"
+        alt="Inventario Minecraft" usemap="#mapaMinecraft" width="250" height="200">
+        <map name="mapaMinecraft">
+        <area shape="rect" coords="56,21,77,39" href="steve.html" alt="steve" title="Steve">
+        <area shape="rect" coords="102,82,123,99" href="escudo.html" alt="escudo" title="Escudo">
+        <area shape="rect" coords="95,172,115,189" href="pechera.html" alt="pechera" title="Pechera">
+        </map>
+        <li>&lt;mark&gt;</li>
+        <p>La etiqueta mark se utiliza para <mark>resaltar</mark> un texto</p>
+        <li>&lt;math&gt;</li>
+        <p>La etiqueta math se utiliza para definir expresiones matemáticas</p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+                <mi>x</mi>
+                <mn>2</mn>
+            </msup>
+            <mo>=</mo>
+            <mn>4</mn>
+        </math>
+
+        <li>&lt;menu&gt;</li>
+        <p>La etiqueta menu se utiliza para definir un menú de comandos</p>
+        <menu>
+            <li>Nuevo</li>
+            <li>Abrir</li>
+            <li>Guardar</li>
+        </menu>
+        <li>&lt;menuitem&gt;</li>
+        <p>La etiqueta menuitem se utiliza para definir un elemento de menú, pero actualmente está obsoleta y no se recomienda usarla.</p>
+        <li>&lt;meta&gt;</li>
+        <p>La etiqueta meta se utiliza para definir metadatos sobre el documento HTML</p>
+        <li>&lt;meter&gt;</li>
+        <label for="durabilidad">Durabilidad del Pico de Diamante:</label>
+        <meter id="durabilidad" min="0" max="1561" value="1230"></meter>
+        <li>&lt;nav&gt;</li>
+        <p>La etiqueta nav se utiliza para definir una sección de navegación dentro de un documento HTML</p>
+        <li>&lt;noscript&gt;</li>
+        <p>La etiqueta noscript se utiliza para definir contenido alternativo que se mostrará si el navegador no admite scripts</p>
+        <li>&lt;object&gt;</li>
+        <p>La etiqueta object se utiliza para incrustar objetos multimedia, como videos o animaciones</p>
+        <object data="imagenes/creeper.jpg" type="image/jpeg" width="250" height="200"></object>
+        <li>&lt;ol&gt;</li>
+        <p>La etiqueta ol se utiliza para definir una lista ordenada</p>
+        <ol>
+            <li>Picar madera</li>
+            <li>Craftear pico de madera</li>
+            <li>Picar Adoquín</li>
+            <li>Craftear herramientas de piedra</li>
+        </ol>
+        <li>&lt;optgroup&gt;</li>
+        <p> se utiliza para agrupar opciones relacionadas en un elemento select (lista desplegable).</p>
+        <select>
+            <optgroup label="Mobs">
+                <option value="Zombie">Zombie</option>
+                <option value="Creeper">Creeper</option>
+            </optgroup>
+            <optgroup label="Bloques">
+                <option value="Piedra">Piedra</option>
+                <option value="Tierra">Tierra</option>
+            </optgroup>
+        </select>
+        <li>&lt;option&gt;</li>
+        <p>La etiqueta option se utiliza para definir una opción dentro de un elemento select</p>
+        <select>
+            <option value="Opcion1">Opción 1</option>
+            <option value="Opcion2">Opción 2</option>
+            <option value="Opcion3">Opción 3</option>   
+        </select>
+        <li>&lt;output&gt;</li>
+        <p>La etiqueta output se utiliza para mostrar el resultado de un cálculo o una acción</p>
+        <li>&lt;p&gt;</li>
+        <p>La etiqueta p se utiliza para definir un párrafo de texto</p>
+        <li>&lt;param&gt;</li>
+        <p>La etiqueta param se utiliza para definir parámetros para un objeto multimedia</p>
+        <object data="aldeano.mp3">
+            <param name="autoplay" value="true">
+          </object>
+        <li>&lt;pre&gt;</li>
+        <p>La etiqueta pre se utiliza para definir texto preformateado</p>
+        <pre>
+            Este es un texto   preformateado.
+               Se respeta el espacio y      el salto de línea.
+        </pre>
+        <li>&lt;progress&gt;</li>
+        <p>La etiqueta progress se utiliza para mostrar el progreso de una tarea</p>
+        <progress value="50" max="100"></progress>
+        <li>&lt;q&gt;</li>
+        <p>La etiqueta q se utiliza para definir una cita corta</p>
+        <p>El creeper es un mob muy peligroso, <q>puede explotar y destruir todo a su alrededor</q></p>
+        <li>&lt;rp&gt;</li>
+        <p>La etiqueta rp se utiliza para definir un paréntesis de ruby</p>
+        <li>&lt;rt&gt;</li>
+        <p>La etiqueta rt se utiliza para definir la pronunciación de un texto en ruby</p>
+        <p>El creeper es un mob muy peligroso, <ruby>puede explotar<rt>explotar</rt></ruby> y destruir todo a su alrededor</p>
+        <li>&lt;ruby&gt;</li>
+        <ruby>
+            漢 <rt> ㄏㄢˋ </rt>
+            </ruby>
+        <li>&lt;s&gt;</li>
+        <p>La etiqueta s se utiliza para definir un texto tachado</p>
+        <p>El creeper es un mob muy peligroso, <s>puede explotar y destruir todo a su alrededor</s></p>
+        <li>&lt;samp&gt;</li>
+        <p>La etiqueta samp se utiliza para definir un texto de ejemplo</p>
+        <p>El creeper es un mob muy peligroso, <samp>puede explotar y destruir todo a su alrededor</samp></p>
+        <li>&lt;script&gt;</li>
+        <p>La etiqueta script se utiliza para definir un script de JavaScript</p>
+        <script>
+            document.write("Hola, mundo!");
+        </script>
+        <li>&lt;section&gt;</li>
+        <p>La etiqueta section se utiliza para definir una sección dentro de un documento HTML</p>
+        <li>&lt;select&gt;</li>
+        <p>La etiqueta select se utiliza para crear una lista desplegable</p>
+        <select>
+            <option value="Opcion1">Opción 1</option>
+            <option value="Opcion2">Opción 2</option>
+            <option value="Opcion3">Opción 3</option>
+        </select>
+        <li>&lt;slot&gt;</li>
+        <p>La etiqueta slot se utiliza para definir un espacio reservado dentro de un componente web</p>
+        <li>&lt;small&gt;</li>
+        <p>La etiqueta small se utiliza para definir un texto pequeño</p>
+        <p>El creeper es un mob muy peligroso, <small>puede explotar y destruir todo a su alrededor</small></p>
+        <li>&lt;source&gt;</li>
+        <p>La etiqueta source se utiliza para definir múltiples fuentes para un elemento multimedia</p>
+        <!-- LO UTILICE EN EL AUDIO -->
+        <li>&lt;span&gt;</li>
+        <p>La etiqueta span se utiliza para definir un texto en línea</p>
+        <p>El creeper es un mob muy peligroso, <span style="color: red;">puede explotar y destruir todo a su alrededor</span></p>
+        <li>&lt;strong&gt;</li>
+        <p>La etiqueta strong se utiliza para definir un texto fuerte o importante</p>
+        <p>El creeper es un mob muy peligroso, <strong>puede explotar y destruir todo a su alrededor</strong></p>
+        <li>&lt;style&gt;</li>
+        <p>La etiqueta style se utiliza para definir estilos CSS dentro de un documento HTML</p>
+        <style>
+            body {
+                background-color: #f0f0f0;
+            }
+        </style>
+
+        <li>&lt;sub&gt;</li>
+        <p>La etiqueta sub se utiliza para definir un texto subíndice</p>
+        <p>El agua tiene una fórmula química de H<sub>2</sub>O</p>
+        <li>&lt;summary&gt;</li>
+        <p>La etiqueta summary se utiliza para definir un resumen de un elemento details</p>
+        <details>
+            <summary>Información del Enderman</summary>
+            <p>El Enderman es un mob neutral que aparece en el juego Minecraft.</p>
+        </details>
+        <li>&lt;sup&gt;</li>
+        <p>La etiqueta sup se utiliza para definir un texto superíndice</p>
+        <p>El agua tiene una fórmula química de H<sup>2</sup>O</p>
+        <li>&lt;svg&gt;</li>
+        <p>La etiqueta svg se utiliza para definir gráficos vectoriales escalables</p>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+        <li>&lt;table&gt;</li>
+        <p>La etiqueta table se utiliza para definir una tabla</p>
+        <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Steve</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>22</td>
+            </tr>
+        </table>
+
+        <li>&lt;tbody&gt;</li>
+        <p>La etiqueta tbody se utiliza para agrupar el cuerpo de una tabla</p>
+        <li>&lt;td&gt;</li>
+        <p>La etiqueta td se utiliza para definir una celda dentro de una tabla</p>
+        <td>Steve</td>
+        <li>&lt;template&gt;</li>
+        <p>La etiqueta template se utiliza para definir un contenido que no se mostrará hasta que se utilice mediante JavaScript</p>
+        <li>&lt;textarea&gt;</li>
+        <p>La etiqueta textarea se utiliza para crear un área de texto de varias líneas</p>
+        <textarea rows="4" cols="50" placeholder="Escribe algo aquí"></textarea>
+        <li>&lt;tfoot&gt;</li>
+        <p>La etiqueta tfoot se utiliza para agrupar el pie de una tabla</p>
+        <li>&lt;th&gt;</li>
+        <p>La etiqueta th se utiliza para definir una celda de encabezado dentro de una tabla</p>
+        <li>&lt;thead&gt;</li>
+        <p>La etiqueta thead se utiliza para agrupar el encabezado de una tabla</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Steve</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Alex</td>
+                    <td>22</td>
+                </tr>
+            </tbody>
+        </table>
+        <li>&lt;time&gt;</li>
+        <p>La etiqueta time se utiliza para definir una fecha y hora</p>
+        <time datetime="2023-10-01">1 de octubre de 2023</time>
+        <li>&lt;title&gt;</li>
+        <p>La etiqueta title se utiliza para definir el título de un documento HTML</p>
+        <li>&lt;tr&gt;</li>
+        <p>La etiqueta tr se utiliza para definir una fila dentro de una tabla</p>
+        <li>&lt;track&gt;</li>
+        <p>La etiqueta track se utiliza para definir pistas de texto para elementos de video y audio</p>
+        <li>&lt;u&gt;</li>
+        <p>La etiqueta u se utiliza para definir un texto subrayado</p>
+        <p>El creeper es un mob muy peligroso, <u>puede explotar y destruir todo a su alrededor</u></p>
+        <li>&lt;ul&gt;</li>
+        <p>La etiqueta ul se utiliza para definir una lista desordenada</p>
+        <ul>
+            <li>queso</li>
+            <li>jamon</li>
+            <li>harina</li>
+        </ul>
+        <li>&lt;var&gt;</li>
+        <p>La etiqueta var se utiliza para definir una variable</p>
+        <p>La variable <var>x</var> representa un número entero</p>
+        <li>&lt;video&gt;</li>
+        <p>La etiqueta video se utiliza para incrustar un video en un documento HTML</p>
+        <li>&lt;wbr&gt;</li>
+        <p>La etiqueta wbr se utiliza para definir un punto de ruptura opcional dentro de un texto</p>
+        <p>El creeper es un mob muy peligroso, <wbr>puede explotar y destruir todo a su alrededor</p>
+    </ul>
+</body>
+</html>
